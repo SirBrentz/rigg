@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>10" Wet Tile Saw · Rigg</title>
+<meta name="description" content="Rent a professional-grade 10-inch wet tile saw from Tom W. in Hillcrest. $45/day. Diamond blade and stand included." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============== ACTIVITY TICKER ============== -->
+<div class="ticker" aria-label="Live activity">
+  <div class="ticker__rail">
+    <span><span class="ticker__dot"></span><strong>Marcus T.</strong> rented a <strong>Milwaukee M18 impact driver</strong> · 2 min ago · Maumelle</span>
+    <span><span class="ticker__dot"></span><strong>Rebecca K.</strong> listed a <strong>22-ton log splitter</strong> · 6 min ago · Cabot</span>
+    <span><span class="ticker__dot"></span><strong>Tom W.</strong> booked a <strong>10" tile saw</strong> for Saturday · 11 min ago · Hillcrest</span>
+    <span><span class="ticker__dot"></span><strong>Aisha P.</strong> returned a <strong>3000 PSI pressure washer</strong> · 14 min ago · Bryant</span>
+    <span><span class="ticker__dot"></span><strong>Derek H.</strong> earned <strong>$76 this week</strong> renting out his Stihl · 18 min ago · Benton</span>
+    <span><span class="ticker__dot"></span><strong>Marcus T.</strong> rented a <strong>Milwaukee M18 impact driver</strong> · 2 min ago · Maumelle</span>
+    <span><span class="ticker__dot"></span><strong>Rebecca K.</strong> listed a <strong>22-ton log splitter</strong> · 6 min ago · Cabot</span>
+    <span><span class="ticker__dot"></span><strong>Tom W.</strong> booked a <strong>10" tile saw</strong> for Saturday · 11 min ago · Hillcrest</span>
+    <span><span class="ticker__dot"></span><strong>Aisha P.</strong> returned a <strong>3000 PSI pressure washer</strong> · 14 min ago · Bryant</span>
+    <span><span class="ticker__dot"></span><strong>Derek H.</strong> earned <strong>$76 this week</strong> renting out his Stihl · 18 min ago · Benton</span>
+  </div>
+</div>
+
+<!-- ============== NAV ============== -->
+<nav class="nav" id="nav">
+  <div class="container nav__row">
+    <a href="index.html" class="logo" aria-label="Rigg home">
+      Rigg<span class="logo__dot"></span>
+      <sub>peer-to-peer tool rental</sub>
+    </a>
+    <div class="nav__links">
+      <div class="nav__item" data-dropdown>
+        <button class="nav__link" aria-haspopup="true" aria-expanded="false">
+          Browse
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="3 5 6 8 9 5"/></svg>
+        </button>
+        <div class="mega" role="menu">
+          <div class="mega__head">
+            <span>Browse by category</span>
+            <a href="browse.html">View all 1,247 →</a>
+          </div>
+          <div class="mega__grid">
+            <a href="browse.html?cat=power" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 34 L34 14"/><path d="M10 30 L18 38"/><rect x="8" y="30" width="10" height="10" rx="2"/><path d="M30 10 L38 18 L36 20 L28 12 Z" fill="currentColor"/></svg>
+              <div class="mega__name">Power Tools</div>
+              <div class="mega__count">312 listings</div>
+            </a>
+            <a href="browse.html?cat=lawn" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 36 L20 28 M18 32 L12 38"/><path d="M26 8 Q32 14 30 22 Q38 20 42 26 Q34 32 26 30 Q24 38 16 36"/></svg>
+              <div class="mega__name">Lawn &amp; Yard</div>
+              <div class="mega__count">204 listings</div>
+            </a>
+            <a href="browse.html?cat=auto" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="8" y="20" width="32" height="14" rx="2"/><circle cx="16" cy="36" r="4"/><circle cx="32" cy="36" r="4"/><path d="M10 20 L14 10 L34 10 L38 20"/></svg>
+              <div class="mega__name">Automotive</div>
+              <div class="mega__count">138 listings</div>
+            </a>
+            <a href="browse.html?cat=weld" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M24 6 Q18 14 22 22 Q14 22 12 30 Q18 36 26 32 Q26 40 32 42 Q38 36 34 28 Q42 26 42 18 Q36 14 28 18 Q28 10 24 6 Z"/></svg>
+              <div class="mega__name">Welding</div>
+              <div class="mega__count">62 listings</div>
+            </a>
+            <a href="browse.html?cat=plumbing" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 8 L14 20 Q14 26 20 26 L28 26 Q34 26 34 32 L34 42"/><circle cx="14" cy="8" r="3"/><path d="M30 38 L34 42 L38 38 Z" fill="currentColor"/></svg>
+              <div class="mega__name">Plumbing</div>
+              <div class="mega__count">89 listings</div>
+            </a>
+            <a href="browse.html?cat=concrete" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="6" y="22" width="36" height="18" rx="2"/><circle cx="24" cy="31" r="6"/><path d="M12 22 L14 14 L34 14 L36 22"/></svg>
+              <div class="mega__name">Concrete</div>
+              <div class="mega__count">47 listings</div>
+            </a>
+            <a href="browse.html?cat=ladders" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 8 L18 40 M30 8 L30 40 M18 16 L30 16 M18 24 L30 24 M18 32 L30 32"/><path d="M14 8 L34 8"/></svg>
+              <div class="mega__name">Ladders &amp; Lifts</div>
+              <div class="mega__count">113 listings</div>
+            </a>
+            <a href="browse.html?cat=specialty" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 24 Q16 12 24 24 T40 24"/><circle cx="24" cy="8" r="3" fill="currentColor"/><path d="M22 36 L26 36 L25 42 L23 42 Z" fill="currentColor"/></svg>
+              <div class="mega__name">Specialty &amp; Rare</div>
+              <div class="mega__count">74 listings</div>
+            </a>
+          </div>
+          <a href="listing.html?surprise=1" class="mega__surprise">
+            <div class="mega__surprise-left">
+              <div class="mega__die">🎲</div>
+              <div>
+                <strong>Surprise me</strong>
+                <small>Open a random tool — might find something you didn't know you needed</small>
+              </div>
+            </div>
+            <div class="mega__arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="index.html#how" class="nav__link">How it works</a>
+      <a href="index.html#earn" class="nav__link">List a tool</a>
+      <a href="index.html#trust" class="nav__link">Trust &amp; safety</a>
+    </div>
+    <div class="nav__cta">
+      <a href="#" class="nav__signin">Sign in</a>
+      <a href="index.html#earn" class="btn btn--primary">List a tool</a>
+      <button class="btn btn--ghost nav__burger" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============== PRODUCT PAGE ============== -->
+<div class="container product-page">
+  <div class="crumbs">
+    <a href="index.html">Home</a>
+    <span>›</span>
+    <a href="browse.html">Browse</a>
+    <span>›</span>
+    <a href="browse.html?cat=power">Power Tools</a>
+    <span>›</span>
+    <span class="crumbs__current">10" Wet Tile Saw</span>
+  </div>
+
+  <div class="product-grid">
+
+    <!-- ─── LEFT: product info + gallery ─── -->
+    <div class="product-info">
+
+      <!-- Gallery -->
+      <div class="gallery" style="margin-bottom: 32px;">
+        <div class="gallery__main">
+          <svg class="tool-illo" viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(300 230)">
+              <!-- table base -->
+              <rect x="-200" y="60" width="400" height="16" rx="3" fill="#15130E"/>
+              <rect x="-180" y="76" width="30" height="60" fill="#15130E"/>
+              <rect x="150" y="76" width="30" height="60" fill="#15130E"/>
+              <!-- main body -->
+              <rect x="-170" y="-60" width="340" height="130" rx="8" fill="#15130E"/>
+              <rect x="-160" y="-50" width="140" height="110" rx="4" fill="#2D3A44"/>
+              <!-- water tray -->
+              <rect x="-160" y="40" width="320" height="20" rx="2" fill="#1E252E"/>
+              <!-- blade -->
+              <circle cx="-60" cy="5" r="72" fill="none" stroke="#E5DFCF" stroke-width="2" stroke-dasharray="6 4"/>
+              <circle cx="-60" cy="5" r="66" fill="#3C3831"/>
+              <circle cx="-60" cy="5" r="60" fill="none" stroke="#5C574B" stroke-width="1"/>
+              <circle cx="-60" cy="5" r="10" fill="#E44818"/>
+              <circle cx="-60" cy="5" r="4" fill="#EFE9DC"/>
+              <!-- blade teeth hint -->
+              <g stroke="#5C574B" stroke-width="1">
+                <line x1="-60" y1="-71" x2="-60" y2="-65"/>
+                <line x1="-10" y1="-47" x2="-14" y2="-43"/>
+                <line x1="11" y1="5" x2="5" y2="5"/>
+                <line x1="-10" y1="57" x2="-14" y2="53"/>
+                <line x1="-60" y1="81" x2="-60" y2="75"/>
+                <line x1="-110" y1="57" x2="-106" y2="53"/>
+                <line x1="-131" y1="5" x2="-125" y2="5"/>
+                <line x1="-110" y1="-47" x2="-106" y2="-43"/>
+              </g>
+              <!-- rip fence / guide rail -->
+              <rect x="30" y="-20" width="140" height="12" rx="2" fill="#E44818"/>
+              <rect x="30" y="-30" width="10" height="22" fill="#E44818"/>
+              <rect x="160" y="-30" width="10" height="22" fill="#E44818"/>
+              <!-- control panel -->
+              <rect x="-160" y="-44" width="60" height="28" rx="2" fill="#3C3831"/>
+              <rect x="-155" y="-40" width="14" height="6" fill="#E44818"/>
+              <rect x="-138" y="-40" width="14" height="6" fill="#EFE9DC" opacity=".3"/>
+              <rect x="-121" y="-40" width="14" height="6" fill="#EFE9DC" opacity=".3"/>
+              <!-- water hose detail -->
+              <path d="M-90 -60 Q-85 -90 -60 -80" stroke="#5C574B" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <!-- brand sticker -->
+              <rect x="-140" y="-20" width="30" height="10" rx="1" fill="#E44818"/>
+            </g>
+            <!-- accent scratches -->
+            <line x1="80" y1="380" x2="520" y2="380" stroke="#15130E" stroke-width="1" opacity="0.15" stroke-dasharray="3 8"/>
+          </svg>
+          <div class="gallery__badge" id="galleryBadge">
+            <span id="badgeText">✓ Verified tool</span>
+          </div>
+        </div>
+        <div class="gallery__thumbs">
+          <button class="gallery__thumb is-active" aria-label="Main view">
+            <svg viewBox="0 0 100 100" style="background: linear-gradient(135deg, #D9D1BD 0%, #B5AB92 100%);">
+              <g transform="translate(50 50)"><rect x="-30" y="-12" width="60" height="26" rx="2" fill="#15130E"/><circle cx="-10" cy="0" r="14" fill="#3C3831" stroke="#E5DFCF" stroke-width="1" stroke-dasharray="2 1"/><circle cx="-10" cy="0" r="3" fill="#E44818"/></g>
+            </svg>
+          </button>
+          <button class="gallery__thumb" aria-label="Blade detail">
+            <svg viewBox="0 0 100 100" style="background: linear-gradient(135deg, #E5DFCF 0%, #C9C0A8 100%);">
+              <g transform="translate(50 50)"><circle r="32" fill="#3C3831"/><circle r="32" fill="none" stroke="#E5DFCF" stroke-width="1.5" stroke-dasharray="3 2"/><circle r="6" fill="#E44818"/></g>
+            </svg>
+          </button>
+          <button class="gallery__thumb" aria-label="Control panel">
+            <svg viewBox="0 0 100 100" style="background: linear-gradient(135deg, #FBF7EA 0%, #D9D1BD 100%);">
+              <g transform="translate(50 50)"><rect x="-25" y="-18" width="50" height="36" rx="3" fill="#15130E"/><rect x="-20" y="-12" width="12" height="8" fill="#E44818"/><rect x="-4" y="-12" width="12" height="8" fill="#E5DFCF" opacity=".4"/><rect x="-20" y="4" width="40" height="8" fill="#3C3831"/></g>
+            </svg>
+          </button>
+          <button class="gallery__thumb" aria-label="In-use">
+            <svg viewBox="0 0 100 100" style="background: linear-gradient(135deg, #FFE4D7 0%, #E44818 100%);">
+              <g transform="translate(50 55)"><rect x="-35" y="-5" width="70" height="10" rx="1" fill="#EFE9DC"/><rect x="-30" y="-15" width="50" height="14" rx="2" fill="#15130E"/><circle cx="-8" cy="-8" r="12" fill="#3C3831"/></g>
+            </svg>
+          </button>
+          <button class="gallery__thumb" aria-label="With accessories">
+            <svg viewBox="0 0 100 100" style="background: linear-gradient(135deg, #D9D1BD 0%, #8A8172 100%);">
+              <g transform="translate(50 50)"><rect x="-30" y="-25" width="60" height="50" rx="3" fill="#15130E"/><rect x="-25" y="-20" width="50" height="8" fill="#2D3A44"/><rect x="-22" y="-8" width="44" height="6" fill="#3C3831"/><rect x="-22" y="4" width="44" height="6" fill="#3C3831"/></g>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="product-info__cat">Power Tools · Wet Saws</div>
+      <h1>10" Wet Tile Saw w/ Diamond Blade</h1>
+
+      <div class="product-info__meta">
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <strong>1.4 mi</strong> · Hillcrest
+        </div>
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Pickup <strong>7am–9pm</strong>
+        </div>
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Responds in <strong>under 2 hrs</strong>
+        </div>
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 Z"/></svg>
+          <strong>4.8</strong> · 22 reviews
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="pdp-section">
+        <h3>About this tile saw</h3>
+        <p>Professional-grade MK Diamond 10-inch wet saw — the one you'd see on a real job site. Handles porcelain, ceramic, travertine, and natural stone up to 3.5" thick. The water tray catches slurry so your garage stays clean, and the continuous-rim diamond blade leaves polished cuts that don't need finishing.</p>
+        <p>I've had this saw for three years and used it for two of my own bathroom remodels plus a patio job. Blade was replaced six months ago — still plenty of life. Comes fully tuned, with a 25-ft GFCI extension cord so you can run it right off a regular outlet.</p>
+        <p>Great for: backsplash tile, bathroom floors, shower surrounds, outdoor patio stone, fireplace surrounds. <strong>Not</strong> recommended for: glass tile (needs a different blade) or anything over 4" thick.</p>
+      </div>
+
+      <!-- What's included -->
+      <div class="pdp-section">
+        <h3>What's included</h3>
+        <ul class="included-list">
+          <li>MK-170 10" wet tile saw + stand</li>
+          <li>Continuous-rim diamond blade (≈60% life)</li>
+          <li>25-ft 12-gauge GFCI extension cord</li>
+          <li>Water pump + drainage hose</li>
+          <li>Miter guide + rip fence</li>
+          <li>Blade wrench + spare retention nut</li>
+          <li>Safety glasses (new, unopened)</li>
+          <li>Original operator's manual</li>
+        </ul>
+      </div>
+
+      <!-- Rules -->
+      <div class="pdp-section">
+        <h3>Rules &amp; requirements</h3>
+        <div class="rules-grid">
+          <div class="rule">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10 V7 a5 5 0 0 1 10 0 V10"/></svg>
+            <div><strong>$100 security hold</strong><br>Released on return inspection</div>
+          </div>
+          <div class="rule">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12" y2="16"/></svg>
+            <div><strong>24-hour cancellation</strong><br>Full refund if cancelled early</div>
+          </div>
+          <div class="rule">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 L2 22 L22 22 Z"/><line x1="12" y1="10" x2="12" y2="14"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+            <div><strong>Use indoors or covered</strong><br>No outdoor use in the rain</div>
+          </div>
+          <div class="rule">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 13 L10 19 L20 6"/></svg>
+            <div><strong>Return cleaned</strong><br>$25 fee if slurry isn't rinsed</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Owner card -->
+      <div class="pdp-section">
+        <h3>Your host</h3>
+        <div class="owner-card">
+          <div class="owner-card__photo">TW</div>
+          <div>
+            <div class="owner-card__name">
+              Tom W.
+              <span class="verified-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12 L9 18 L21 6"/></svg>
+                VERIFIED
+              </span>
+            </div>
+            <div class="owner-card__sub">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                ~2hr response
+              </span>
+              <span>· 47 tools rented</span>
+              <span>· Member since 2023</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn--ghost">Message Tom</a>
+        </div>
+      </div>
+
+      <!-- Pickup map -->
+      <div class="pdp-section">
+        <h3>Pickup location</h3>
+        <div class="pickup-map">
+          <svg viewBox="0 0 800 400" preserveAspectRatio="none">
+            <!-- decorative "map" roads -->
+            <g fill="none" stroke="#15130E" stroke-width="1.5" opacity="0.18">
+              <path d="M0 120 L800 140"/>
+              <path d="M0 220 L800 240"/>
+              <path d="M0 300 L800 320"/>
+              <path d="M120 0 L130 400"/>
+              <path d="M320 0 L340 400"/>
+              <path d="M480 0 L500 400"/>
+              <path d="M640 0 L660 400"/>
+            </g>
+            <g fill="#15130E" opacity="0.08">
+              <rect x="140" y="140" width="170" height="80"/>
+              <rect x="350" y="140" width="120" height="80"/>
+              <rect x="510" y="140" width="120" height="80"/>
+              <rect x="140" y="240" width="170" height="60"/>
+              <rect x="350" y="240" width="120" height="60"/>
+              <rect x="510" y="240" width="120" height="60"/>
+            </g>
+            <g fill="#5C9A4F" opacity="0.15">
+              <circle cx="80" cy="320" r="50"/>
+              <circle cx="720" cy="80" r="40"/>
+            </g>
+          </svg>
+          <div class="pickup-map__pin">
+            <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 0 C8 0 2 6 2 14 C2 24 16 32 16 32 S30 24 30 14 C30 6 24 0 16 0 Z" stroke="#15130E" stroke-width="1.5"/><circle cx="16" cy="14" r="5" fill="#EFE9DC"/></svg>
+          </div>
+          <div class="pickup-map__addr">
+            <strong>Hillcrest neighborhood</strong>
+            <small>Little Rock, AR · 72205</small>
+          </div>
+        </div>
+        <p style="margin-top: 14px; font-size: 13.5px; color: var(--muted); font-family: var(--f-mono); letter-spacing: 0.02em;">Exact address shared after booking is confirmed.</p>
+      </div>
+
+      <!-- Reviews -->
+      <div class="pdp-section">
+        <h3>Reviews · 22 total</h3>
+
+        <div class="reviews-summary">
+          <div class="reviews-summary__score">
+            <div class="reviews-summary__num">4.8</div>
+            <div class="reviews-summary__stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+            </div>
+            <div class="reviews-summary__total">22 reviews</div>
+          </div>
+          <div class="reviews-summary__bars">
+            <div class="rating-bar">
+              <span>5</span><div class="rating-bar__track"><div class="rating-bar__fill" style="width: 82%"></div></div><span class="rating-bar__pct">82%</span>
+            </div>
+            <div class="rating-bar">
+              <span>4</span><div class="rating-bar__track"><div class="rating-bar__fill" style="width: 14%"></div></div><span class="rating-bar__pct">14%</span>
+            </div>
+            <div class="rating-bar">
+              <span>3</span><div class="rating-bar__track"><div class="rating-bar__fill" style="width: 4%"></div></div><span class="rating-bar__pct">4%</span>
+            </div>
+            <div class="rating-bar">
+              <span>2</span><div class="rating-bar__track"><div class="rating-bar__fill" style="width: 0%"></div></div><span class="rating-bar__pct">0%</span>
+            </div>
+            <div class="rating-bar">
+              <span>1</span><div class="rating-bar__track"><div class="rating-bar__fill" style="width: 0%"></div></div><span class="rating-bar__pct">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-list">
+
+          <div class="review">
+            <div class="review__head">
+              <div class="review__author">
+                <div class="review__avatar">KJ</div>
+                <div class="review__name">
+                  <strong>Kevin J.</strong>
+                  <small>2 WEEKS AGO</small>
+                </div>
+              </div>
+              <div class="review__stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              </div>
+            </div>
+            <p class="review__body">Tom was super helpful — walked me through how to tension the blade and set up the water pump. The saw cut through 18 sqft of porcelain like it was nothing. Way better than the rental I got from Home Depot last year, and half the cost.</p>
+          </div>
+
+          <div class="review">
+            <div class="review__head">
+              <div class="review__author">
+                <div class="review__avatar">MR</div>
+                <div class="review__name">
+                  <strong>Monica R.</strong>
+                  <small>1 MONTH AGO</small>
+                </div>
+              </div>
+              <div class="review__stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              </div>
+            </div>
+            <p class="review__body">Needed it for a single backsplash project and it was perfect. Tom had it ready on his porch when I arrived and texted me back in under 10 minutes every time I messaged. The blade is sharp and the miter fence is square — I checked before I started cutting.</p>
+          </div>
+
+          <div class="review">
+            <div class="review__head">
+              <div class="review__author">
+                <div class="review__avatar">DS</div>
+                <div class="review__name">
+                  <strong>Dave S.</strong>
+                  <small>1 MONTH AGO</small>
+                </div>
+              </div>
+              <div class="review__stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="#D9D1BD"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              </div>
+            </div>
+            <p class="review__body">Great saw, fair price. Only reason I'm dropping a star is that the water tray took a minute to figure out — the drain spout was tucked in a weird spot. Tom saw my message and called me to walk through it, which was above and beyond honestly. Would rent again.</p>
+          </div>
+
+          <div class="review">
+            <div class="review__head">
+              <div class="review__author">
+                <div class="review__avatar">AP</div>
+                <div class="review__name">
+                  <strong>Aisha P.</strong>
+                  <small>2 MONTHS AGO</small>
+                </div>
+              </div>
+              <div class="review__stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              </div>
+            </div>
+            <p class="review__body">Best tile saw rental experience I've had, hands down. Tom even threw in a handful of replacement bolts since the ones on the rip fence were stripped. Runs smooth, no vibration. Got my whole shower floor cut in one afternoon.</p>
+          </div>
+
+          <div class="review">
+            <div class="review__head">
+              <div class="review__author">
+                <div class="review__avatar">BK</div>
+                <div class="review__name">
+                  <strong>Brett K.</strong>
+                  <small>3 MONTHS AGO</small>
+                </div>
+              </div>
+              <div class="review__stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              </div>
+            </div>
+            <p class="review__body">Picked up Saturday morning, returned Sunday night. Tom's pickup location is easy to find, has a paved driveway so loading into my truck was painless. The extension cord included is a nice touch — saved me a trip.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 20px;">
+          <button class="btn btn--ghost">Show all 22 reviews →</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ─── RIGHT: booking sticky card ─── -->
+    <aside>
+      <div class="booking">
+        <div class="booking__head">
+          <div>
+            <span class="booking__price">$45<small>/day</small></span>
+          </div>
+          <span class="booking__rating">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+            4.8<a href="#">· 22 reviews</a>
+          </span>
+        </div>
+
+        <div class="date-picker">
+          <div class="date-picker__field">
+            <div class="date-picker__label">Pickup</div>
+            <div class="date-picker__value">Sat · Oct 26</div>
+          </div>
+          <div class="date-picker__field">
+            <div class="date-picker__label">Return</div>
+            <div class="date-picker__value">Mon · Oct 28</div>
+          </div>
+        </div>
+        <div class="time-row">
+          <div class="date-picker__label">Pickup window</div>
+          <div class="date-picker__value">9:00 AM – 11:00 AM</div>
+        </div>
+
+        <div class="price-breakdown">
+          <div class="price-row">
+            <span>$45 × 3 days</span>
+            <span>$135.00</span>
+          </div>
+          <div class="price-row">
+            <span>Service fee</span>
+            <span>$8.00</span>
+          </div>
+          <div class="price-row price-row--protection">
+            <span>Damage protection</span>
+            <span>Included</span>
+          </div>
+          <div class="price-row price-row--total">
+            <span>Total</span>
+            <span>$143.00</span>
+          </div>
+        </div>
+
+        <button class="btn btn--orange btn--full btn--big booking__cta">Request to book</button>
+        <button class="btn btn--ghost btn--full" style="margin-top: 10px;">Message Tom first</button>
+        <p class="booking__note">You won't be charged yet.<br>Free cancellation up to 24 hours before pickup.</p>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- ============== SIMILAR TOOLS ============== -->
+<section class="section" style="padding-top: 60px;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Similar tools near you</span>
+        <h2>More in <span class="accent">Power Tools</span>.</h2>
+      </div>
+      <div class="section-head__right" style="display: flex; align-items: end; justify-content: end;">
+        <a href="browse.html?cat=power" class="btn btn--ghost">Browse all 312 →</a>
+      </div>
+    </div>
+
+    <div class="similar-row">
+      <a href="listing.html?id=miter-saw" class="listing">
+        <div class="listing__image" style="background: linear-gradient(135deg, #C9C0A8 0%, #8A8172 100%);">
+          <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(150 100)">
+              <rect x="-80" y="25" width="160" height="16" rx="2" fill="#15130E"/>
+              <rect x="-15" y="20" width="30" height="8" fill="#2D3A44"/>
+              <g transform="rotate(-20)">
+                <rect x="-40" y="-50" width="80" height="34" rx="4" fill="#E44818"/>
+                <circle cx="0" cy="14" r="36" fill="none" stroke="#15130E" stroke-width="2"/>
+                <circle cx="0" cy="14" r="30" fill="#3C3831"/>
+                <circle cx="0" cy="14" r="4" fill="#E5DFCF"/>
+              </g>
+            </g>
+          </svg>
+          <div class="listing__price-tag">$25<sub>/day</sub></div>
+          <div class="listing__distance">2.2 mi</div>
+        </div>
+        <div class="listing__body">
+          <div class="listing__cat">Power tools</div>
+          <div class="listing__title">Bosch 12" Sliding Miter Saw</div>
+          <div class="listing__meta">
+            <div class="listing__owner"><div class="owner-avatar">AW</div>Ada W.</div>
+            <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.9</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="listing.html?id=track-saw" class="listing">
+        <div class="listing__image" style="background: linear-gradient(135deg, #FBF7EA 0%, #D9D1BD 100%);">
+          <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(150 100)">
+              <rect x="-100" y="14" width="200" height="10" rx="2" fill="#15130E"/>
+              <g transform="translate(-20 -10) rotate(-5)">
+                <rect x="-40" y="-20" width="80" height="38" rx="5" fill="#2D3A44"/>
+                <circle cx="10" cy="14" r="20" fill="#E5DFCF"/>
+                <circle cx="10" cy="14" r="18" fill="none" stroke="#15130E" stroke-width="1" stroke-dasharray="3 2"/>
+                <rect x="-42" y="-14" width="30" height="22" rx="3" fill="#E44818"/>
+              </g>
+            </g>
+          </svg>
+          <div class="listing__price-tag">$28<sub>/day</sub></div>
+          <div class="listing__distance">1.7 mi</div>
+        </div>
+        <div class="listing__body">
+          <div class="listing__cat">Power tools</div>
+          <div class="listing__title">Makita Track Saw + rails</div>
+          <div class="listing__meta">
+            <div class="listing__owner"><div class="owner-avatar">YT</div>Yuki T.</div>
+            <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>5.0</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="listing.html?id=grinder" class="listing">
+        <div class="listing__image" style="background: linear-gradient(135deg, #FBF7EA 0%, #E5DFCF 100%);">
+          <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(150 100) rotate(-15)">
+              <rect x="-70" y="-14" width="110" height="28" rx="5" fill="#E44818"/>
+              <rect x="-60" y="-10" width="50" height="20" rx="3" fill="#15130E"/>
+              <rect x="38" y="-4" width="12" height="8" fill="#3C3831"/>
+              <circle cx="60" cy="0" r="24" fill="#3C3831"/>
+              <circle cx="60" cy="0" r="22" fill="none" stroke="#E5DFCF" stroke-width="1.5" stroke-dasharray="3 2"/>
+              <circle cx="60" cy="0" r="5" fill="#E5DFCF"/>
+            </g>
+          </svg>
+          <div class="listing__price-tag">$20<sub>/day</sub></div>
+          <div class="listing__distance">1.5 mi</div>
+        </div>
+        <div class="listing__body">
+          <div class="listing__cat">Specialty</div>
+          <div class="listing__title">9" Angle Grinder + wheels</div>
+          <div class="listing__meta">
+            <div class="listing__owner"><div class="owner-avatar">HP</div>Hannah P.</div>
+            <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.9</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="listing.html?id=rotary-hammer" class="listing">
+        <div class="listing__image" style="background: linear-gradient(135deg, #E5DFCF 0%, #B5AB92 100%);">
+          <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(150 100) rotate(-10)">
+              <rect x="-50" y="-20" width="90" height="34" rx="5" fill="#2D3A44"/>
+              <rect x="-45" y="-14" width="50" height="22" rx="2" fill="#E44818"/>
+              <rect x="40" y="-6" width="50" height="10" rx="2" fill="#15130E"/>
+              <rect x="85" y="-3" width="18" height="4" fill="#EFE9DC"/>
+              <rect x="-60" y="14" width="22" height="30" rx="3" fill="#15130E"/>
+            </g>
+          </svg>
+          <div class="listing__price-tag">$22<sub>/day</sub></div>
+          <div class="listing__distance">2.3 mi</div>
+        </div>
+        <div class="listing__body">
+          <div class="listing__cat">Power tools</div>
+          <div class="listing__title">Bosch Bulldog Rotary Hammer</div>
+          <div class="listing__meta">
+            <div class="listing__owner"><div class="owner-avatar">PK</div>Phil K.</div>
+            <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.8</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <span class="logo">Rigg<span class="logo__dot"></span></span>
+        <p class="footer__tag">The local marketplace for tool rental. Built in Arkansas, on the idea that the tool you need is usually much closer than you think.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Marketplace</h5>
+        <ul>
+          <li><a href="browse.html">Browse tools</a></li>
+          <li><a href="browse.html">Categories</a></li>
+          <li><a href="browse.html?sort=top-rated">Top-rated owners</a></li>
+          <li><a href="#">Gift cards</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Owners</h5>
+        <ul>
+          <li><a href="index.html#earn">List a tool</a></li>
+          <li><a href="#">Pricing calculator</a></li>
+          <li><a href="#">Owner handbook</a></li>
+          <li><a href="#">Damage protection</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Trust &amp; safety</a></li>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© 2026 Rigg, Inc. · Little Rock, AR</div>
+      <div style="display: flex; gap: 22px;">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Community guidelines</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wordmark" aria-hidden="true">RIGG<span class="accent">·</span>RIGG<span class="accent">·</span>RIGG</div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

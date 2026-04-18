@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Browse tools near Little Rock · Rigg</title>
+<meta name="description" content="1,247 tools available to rent from neighbors near Little Rock, Arkansas. Filter by category, price, distance, and availability." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============== ACTIVITY TICKER ============== -->
+<div class="ticker" aria-label="Live activity">
+  <div class="ticker__rail">
+    <span><span class="ticker__dot"></span><strong>Marcus T.</strong> rented a <strong>Milwaukee M18 impact driver</strong> · 2 min ago · Maumelle</span>
+    <span><span class="ticker__dot"></span><strong>Rebecca K.</strong> listed a <strong>22-ton log splitter</strong> · 6 min ago · Cabot</span>
+    <span><span class="ticker__dot"></span><strong>Tom W.</strong> booked a <strong>10" tile saw</strong> for Saturday · 11 min ago · Hillcrest</span>
+    <span><span class="ticker__dot"></span><strong>Aisha P.</strong> returned a <strong>3000 PSI pressure washer</strong> · 14 min ago · Bryant</span>
+    <span><span class="ticker__dot"></span><strong>Derek H.</strong> earned <strong>$76 this week</strong> renting out his Stihl · 18 min ago · Benton</span>
+    <span><span class="ticker__dot"></span><strong>Marcus T.</strong> rented a <strong>Milwaukee M18 impact driver</strong> · 2 min ago · Maumelle</span>
+    <span><span class="ticker__dot"></span><strong>Rebecca K.</strong> listed a <strong>22-ton log splitter</strong> · 6 min ago · Cabot</span>
+    <span><span class="ticker__dot"></span><strong>Tom W.</strong> booked a <strong>10" tile saw</strong> for Saturday · 11 min ago · Hillcrest</span>
+    <span><span class="ticker__dot"></span><strong>Aisha P.</strong> returned a <strong>3000 PSI pressure washer</strong> · 14 min ago · Bryant</span>
+    <span><span class="ticker__dot"></span><strong>Derek H.</strong> earned <strong>$76 this week</strong> renting out his Stihl · 18 min ago · Benton</span>
+  </div>
+</div>
+
+<!-- ============== NAV ============== -->
+<nav class="nav" id="nav">
+  <div class="container nav__row">
+    <a href="index.html" class="logo" aria-label="Rigg home">
+      Rigg<span class="logo__dot"></span>
+      <sub>peer-to-peer tool rental</sub>
+    </a>
+    <div class="nav__links">
+      <div class="nav__item is-open-target" data-dropdown>
+        <button class="nav__link" aria-haspopup="true" aria-expanded="false">
+          Browse
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="3 5 6 8 9 5"/></svg>
+        </button>
+        <div class="mega" role="menu">
+          <div class="mega__head">
+            <span>Browse by category</span>
+            <a href="browse.html">View all 1,247 →</a>
+          </div>
+          <div class="mega__grid">
+            <a href="browse.html?cat=power" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 34 L34 14"/><path d="M10 30 L18 38"/><rect x="8" y="30" width="10" height="10" rx="2"/><path d="M30 10 L38 18 L36 20 L28 12 Z" fill="currentColor"/></svg>
+              <div class="mega__name">Power Tools</div>
+              <div class="mega__count">312 listings</div>
+            </a>
+            <a href="browse.html?cat=lawn" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 36 L20 28 M18 32 L12 38"/><path d="M26 8 Q32 14 30 22 Q38 20 42 26 Q34 32 26 30 Q24 38 16 36"/></svg>
+              <div class="mega__name">Lawn &amp; Yard</div>
+              <div class="mega__count">204 listings</div>
+            </a>
+            <a href="browse.html?cat=auto" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="8" y="20" width="32" height="14" rx="2"/><circle cx="16" cy="36" r="4"/><circle cx="32" cy="36" r="4"/><path d="M10 20 L14 10 L34 10 L38 20"/></svg>
+              <div class="mega__name">Automotive</div>
+              <div class="mega__count">138 listings</div>
+            </a>
+            <a href="browse.html?cat=weld" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M24 6 Q18 14 22 22 Q14 22 12 30 Q18 36 26 32 Q26 40 32 42 Q38 36 34 28 Q42 26 42 18 Q36 14 28 18 Q28 10 24 6 Z"/></svg>
+              <div class="mega__name">Welding</div>
+              <div class="mega__count">62 listings</div>
+            </a>
+            <a href="browse.html?cat=plumbing" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 8 L14 20 Q14 26 20 26 L28 26 Q34 26 34 32 L34 42"/><circle cx="14" cy="8" r="3"/><path d="M30 38 L34 42 L38 38 Z" fill="currentColor"/></svg>
+              <div class="mega__name">Plumbing</div>
+              <div class="mega__count">89 listings</div>
+            </a>
+            <a href="browse.html?cat=concrete" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="6" y="22" width="36" height="18" rx="2"/><circle cx="24" cy="31" r="6"/><path d="M12 22 L14 14 L34 14 L36 22"/></svg>
+              <div class="mega__name">Concrete</div>
+              <div class="mega__count">47 listings</div>
+            </a>
+            <a href="browse.html?cat=ladders" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 8 L18 40 M30 8 L30 40 M18 16 L30 16 M18 24 L30 24 M18 32 L30 32"/><path d="M14 8 L34 8"/></svg>
+              <div class="mega__name">Ladders &amp; Lifts</div>
+              <div class="mega__count">113 listings</div>
+            </a>
+            <a href="browse.html?cat=specialty" class="mega__item">
+              <svg class="mega__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 24 Q16 12 24 24 T40 24"/><circle cx="24" cy="8" r="3" fill="currentColor"/><path d="M22 36 L26 36 L25 42 L23 42 Z" fill="currentColor"/></svg>
+              <div class="mega__name">Specialty &amp; Rare</div>
+              <div class="mega__count">74 listings</div>
+            </a>
+          </div>
+          <a href="listing.html?surprise=1" class="mega__surprise">
+            <div class="mega__surprise-left">
+              <div class="mega__die">🎲</div>
+              <div>
+                <strong>Surprise me</strong>
+                <small>Open a random tool — might find something you didn't know you needed</small>
+              </div>
+            </div>
+            <div class="mega__arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="index.html#how" class="nav__link">How it works</a>
+      <a href="index.html#earn" class="nav__link">List a tool</a>
+      <a href="index.html#trust" class="nav__link">Trust &amp; safety</a>
+    </div>
+    <div class="nav__cta">
+      <a href="#" class="nav__signin">Sign in</a>
+      <a href="index.html#earn" class="btn btn--primary">List a tool</a>
+      <button class="btn btn--ghost nav__burger" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============== PAGE HEAD ============== -->
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span class="crumbs__current">Browse</span>
+    </div>
+    <div class="page-head__title-row">
+      <div>
+        <h1>Tools near <span class="accent">Little Rock</span>, AR</h1>
+        <div class="page-head__meta"><strong style="color: var(--ink)">1,247</strong> listings · 24 shown · sorted by recommended</div>
+      </div>
+      <div class="page-head__search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search tile saw, pressure washer…" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== BROWSE LAYOUT ============== -->
+<div class="container">
+  <div class="browse-layout">
+
+    <!-- ─── Filter sidebar ─── -->
+    <aside class="filters" id="filters">
+      <div class="filter-group">
+        <h4>Category</h4>
+        <div class="filter-list">
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> Power Tools</span>
+            <span class="filter-count">312</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> Lawn &amp; Yard</span>
+            <span class="filter-count">204</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> Automotive</span>
+            <span class="filter-count">138</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> Welding</span>
+            <span class="filter-count">62</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> Plumbing</span>
+            <span class="filter-count">89</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> Concrete</span>
+            <span class="filter-count">47</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> Ladders &amp; Lifts</span>
+            <span class="filter-count">113</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> Specialty</span>
+            <span class="filter-count">74</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Price per day</h4>
+        <div class="filter-range">
+          <input type="range" min="5" max="200" value="85" id="priceRange" />
+          <div class="filter-range__values">
+            <span>$5</span>
+            <span id="priceMax">Up to $85</span>
+            <span>$200+</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Distance</h4>
+        <div class="filter-list">
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="radio" name="dist" /> Within 1 mile</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="radio" name="dist" /> Within 5 miles</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="radio" name="dist" checked /> Within 15 miles</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="radio" name="dist" /> Within 25 miles</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="radio" name="dist" /> Any distance</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Rating</h4>
+        <div class="filter-list">
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> 4.5★ &amp; up</span>
+            <span class="filter-count">812</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> 4.0★ &amp; up</span>
+            <span class="filter-count">1,104</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> 3.5★ &amp; up</span>
+            <span class="filter-count">1,221</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Availability</h4>
+        <div class="filter-list">
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> Available today</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> This week</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> This weekend</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Owner verified</h4>
+        <div class="filter-list">
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" checked /> ID-verified only</span>
+          </label>
+          <label class="filter-check">
+            <span class="filter-check__label"><input type="checkbox" /> Superhost tier</span>
+            <span class="filter-count">147</span>
+          </label>
+        </div>
+      </div>
+
+      <button class="filter-reset">↺ Reset all filters</button>
+    </aside>
+
+    <!-- ─── Main results area ─── -->
+    <main>
+
+      <div class="active-chips">
+        <span class="active-chip">Within 15 mi <button aria-label="Remove">×</button></span>
+        <span class="active-chip">ID-verified <button aria-label="Remove">×</button></span>
+        <span class="active-chip">Under $85/day <button aria-label="Remove">×</button></span>
+      </div>
+
+      <div class="results-bar">
+        <div class="results-count"><strong>1,247</strong> results · showing 1–24</div>
+        <div class="results-controls">
+          <button class="btn btn--ghost filter-toggle-mobile" id="filterToggle" aria-label="Show filters">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="10" y1="18" x2="14" y2="18"/></svg>
+            Filters
+          </button>
+          <div class="select">
+            <label>Sort</label>
+            <select>
+              <option>Recommended</option>
+              <option>Closest first</option>
+              <option>Cheapest first</option>
+              <option>Highest rated</option>
+              <option>Newest listings</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results grid — 24 listings -->
+      <div class="results-grid">
+
+        <!-- 1 · Milwaukee M18 Impact Driver -->
+        <a href="listing.html?id=milwaukee-impact" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #FFE4D7 0%, #FFCBAF 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100) rotate(-15)">
+                <rect x="-55" y="-22" width="80" height="44" rx="6" fill="#15130E"/>
+                <rect x="-52" y="-15" width="18" height="30" rx="2" fill="#E44818"/>
+                <rect x="20" y="-8" width="50" height="16" rx="2" fill="#3C3831"/>
+                <circle cx="70" cy="0" r="10" fill="#E44818"/>
+                <rect x="-65" y="10" width="24" height="28" rx="4" fill="#2D3A44"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$12<sub>/day</sub></div>
+            <div class="listing__distance">0.4 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Power tools</div>
+            <div class="listing__title">Milwaukee M18 Impact Driver Kit</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">PM</div>Priya M.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.9</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 2 · Log Splitter -->
+        <a href="listing.html?id=log-splitter" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #E5DFCF 0%, #C9C0A8 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-80" y="-10" width="160" height="24" rx="3" fill="#15130E"/>
+                <rect x="-70" y="-35" width="50" height="30" rx="3" fill="#E44818"/>
+                <rect x="60" y="-20" width="18" height="50" rx="2" fill="#3C3831"/>
+                <circle cx="-50" cy="24" r="18" fill="#15130E"/><circle cx="-50" cy="24" r="8" fill="#3C3831"/>
+                <circle cx="50" cy="24" r="18" fill="#15130E"/><circle cx="50" cy="24" r="8" fill="#3C3831"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$85<sub>/day</sub></div>
+            <div class="listing__distance">2.1 mi</div>
+            <div class="listing__badge listing__badge--hot">🔥 Hot</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Lawn &amp; yard</div>
+            <div class="listing__title">22-Ton Hydraulic Log Splitter</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">RK</div>Rebecca K.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>5.0</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3 · Tile Saw — the featured product -->
+        <a href="listing.html" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #D9D1BD 0%, #B5AB92 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-70" y="-30" width="140" height="60" rx="4" fill="#15130E"/>
+                <circle cx="-30" cy="0" r="32" fill="none" stroke="#E5DFCF" stroke-width="2" stroke-dasharray="4 3"/>
+                <circle cx="-30" cy="0" r="28" fill="#3C3831"/>
+                <circle cx="-30" cy="0" r="5" fill="#E44818"/>
+                <rect x="20" y="-14" width="50" height="10" rx="2" fill="#E44818"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$45<sub>/day</sub></div>
+            <div class="listing__distance">1.4 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Power tools</div>
+            <div class="listing__title">10" Wet Tile Saw w/ Diamond Blade</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">TW</div>Tom W.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.8</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 4 · Pressure Washer -->
+        <a href="listing.html?id=pressure-washer" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #FFCBAF 0%, #F59670 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100) rotate(-8)">
+                <rect x="-60" y="-18" width="100" height="36" rx="4" fill="#E44818"/>
+                <rect x="-55" y="-12" width="70" height="24" rx="2" fill="#15130E"/>
+                <rect x="40" y="-6" width="40" height="12" rx="2" fill="#3C3831"/>
+                <rect x="-65" y="18" width="22" height="26" rx="3" fill="#15130E"/>
+                <circle cx="-75" cy="-15" r="7" fill="#15130E"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$35<sub>/day</sub></div>
+            <div class="listing__distance">0.6 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Lawn &amp; yard</div>
+            <div class="listing__title">3000 PSI Gas Pressure Washer</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">AP</div>Aisha P.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.9</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 5 · Chainsaw -->
+        <a href="listing.html?id=chainsaw" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #2D3A44 0%, #4A5A68 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100) rotate(-10)">
+                <rect x="-20" y="-8" width="90" height="16" rx="2" fill="#E44818"/>
+                <path d="M70 -8 L110 -4 L110 4 L70 8 Z" fill="#E5DFCF"/>
+                <rect x="-80" y="-24" width="60" height="48" rx="8" fill="#15130E"/>
+                <circle cx="-70" cy="0" r="8" fill="#E44818"/>
+                <rect x="-95" y="-8" width="20" height="16" rx="2" fill="#3C3831"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$38<sub>/day</sub></div>
+            <div class="listing__distance">1.9 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Lawn &amp; yard</div>
+            <div class="listing__title">Stihl MS 271 Farm Boss Chainsaw</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">DH</div>Derek H.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>5.0</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 6 · Drywall Lift -->
+        <a href="listing.html?id=drywall-lift" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #EFE9DC 0%, #D9D1BD 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <line x1="-50" y1="-60" x2="-50" y2="60" stroke="#15130E" stroke-width="4"/>
+                <line x1="50" y1="-60" x2="50" y2="60" stroke="#15130E" stroke-width="4"/>
+                <line x1="-50" y1="-40" x2="50" y2="-40" stroke="#15130E" stroke-width="3"/>
+                <line x1="-50" y1="-10" x2="50" y2="-10" stroke="#15130E" stroke-width="3"/>
+                <line x1="-50" y1="20" x2="50" y2="20" stroke="#15130E" stroke-width="3"/>
+                <rect x="-60" y="-65" width="120" height="8" fill="#E44818"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$28<sub>/day</sub></div>
+            <div class="listing__distance">3.2 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Specialty</div>
+            <div class="listing__title">11-ft Drywall &amp; Panel Lift</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">LB</div>Lisa B.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.7</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 7 · Plate Compactor -->
+        <a href="listing.html?id=compactor" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #B83712 0%, #E44818 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-55" y="-10" width="110" height="40" rx="4" fill="#15130E"/>
+                <rect x="-70" y="-30" width="40" height="24" rx="3" fill="#3C3831"/>
+                <circle cx="-40" cy="30" r="14" fill="#15130E" stroke="#EFE9DC" stroke-width="3"/>
+                <circle cx="40" cy="30" r="14" fill="#15130E" stroke="#EFE9DC" stroke-width="3"/>
+                <rect x="-20" y="-22" width="50" height="12" rx="2" fill="#EFE9DC"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$55<sub>/day</sub></div>
+            <div class="listing__distance">2.5 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Concrete</div>
+            <div class="listing__title">Honda GX-Powered Plate Compactor</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">CO</div>Chris O.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.9</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 8 · Sawzall -->
+        <a href="listing.html?id=sawzall" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #FBF7EA 0%, #E5DFCF 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100) rotate(20)">
+                <rect x="-70" y="-10" width="100" height="20" rx="3" fill="#E44818"/>
+                <rect x="30" y="-5" width="80" height="10" rx="2" fill="#3C3831"/>
+                <rect x="-90" y="-20" width="25" height="40" rx="4" fill="#15130E"/>
+                <circle cx="110" cy="0" r="6" fill="#15130E"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$15<sub>/day</sub></div>
+            <div class="listing__distance">0.8 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Power tools</div>
+            <div class="listing__title">DeWalt 20V Sawzall Recip Saw</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">MT</div>Marcus T.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.8</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 9 · MIG Welder -->
+        <a href="listing.html?id=welder" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #2D3A44 0%, #15130E 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-55" y="-28" width="110" height="52" rx="4" fill="#E44818"/>
+                <rect x="-48" y="-18" width="50" height="30" rx="2" fill="#15130E"/>
+                <circle cx="30" cy="-10" r="5" fill="#EFE9DC"/><circle cx="30" cy="5" r="5" fill="#EFE9DC"/>
+                <path d="M55 0 Q80 0 85 20" stroke="#EFE9DC" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <circle cx="90" cy="26" r="6" fill="#15130E"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$65<sub>/day</sub></div>
+            <div class="listing__distance">4.1 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Welding</div>
+            <div class="listing__title">Miller 140 MIG Welder + Cart</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">JF</div>Jake F.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.9</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 10 · Extension Ladder -->
+        <a href="listing.html?id=ladder" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #FFE4D7 0%, #F59670 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100) rotate(-20)">
+                <rect x="-16" y="-70" width="6" height="140" fill="#15130E"/>
+                <rect x="10" y="-70" width="6" height="140" fill="#15130E"/>
+                <rect x="-16" y="-50" width="32" height="4" fill="#15130E"/>
+                <rect x="-16" y="-30" width="32" height="4" fill="#15130E"/>
+                <rect x="-16" y="-10" width="32" height="4" fill="#15130E"/>
+                <rect x="-16" y="10" width="32" height="4" fill="#15130E"/>
+                <rect x="-16" y="30" width="32" height="4" fill="#15130E"/>
+                <rect x="-16" y="50" width="32" height="4" fill="#15130E"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$18<sub>/day</sub></div>
+            <div class="listing__distance">1.1 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Ladders &amp; lifts</div>
+            <div class="listing__title">Werner 28-ft Aluminum Extension Ladder</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">DR</div>Diana R.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.7</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 11 · Rotary Hammer -->
+        <a href="listing.html?id=rotary-hammer" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #E5DFCF 0%, #B5AB92 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100) rotate(-10)">
+                <rect x="-50" y="-20" width="90" height="34" rx="5" fill="#2D3A44"/>
+                <rect x="-45" y="-14" width="50" height="22" rx="2" fill="#E44818"/>
+                <rect x="40" y="-6" width="50" height="10" rx="2" fill="#15130E"/>
+                <rect x="85" y="-3" width="18" height="4" fill="#EFE9DC"/>
+                <rect x="-60" y="14" width="22" height="30" rx="3" fill="#15130E"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$22<sub>/day</sub></div>
+            <div class="listing__distance">2.3 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Power tools</div>
+            <div class="listing__title">Bosch Bulldog Rotary Hammer Drill</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">PK</div>Phil K.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.8</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 12 · Drain Snake -->
+        <a href="listing.html?id=drain-snake" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #FFCBAF 0%, #E44818 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <circle cx="0" cy="0" r="44" fill="#15130E"/>
+                <circle cx="0" cy="0" r="38" fill="none" stroke="#3C3831" stroke-width="2"/>
+                <circle cx="0" cy="0" r="28" fill="none" stroke="#3C3831" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="18" fill="none" stroke="#3C3831" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="10" fill="#E44818"/>
+                <rect x="30" y="-4" width="55" height="8" rx="4" fill="#15130E"/>
+                <rect x="-75" y="-20" width="30" height="40" rx="4" fill="#3C3831"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$48<sub>/day</sub></div>
+            <div class="listing__distance">3.7 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Plumbing</div>
+            <div class="listing__title">Ridgid K-400 Drum Drain Machine</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">CM</div>Carlos M.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>5.0</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 13 · Generator -->
+        <a href="listing.html?id=generator" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #E5DFCF 0%, #D9D1BD 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-70" y="-40" width="140" height="70" rx="10" fill="#E44818"/>
+                <rect x="-60" y="-30" width="120" height="50" rx="6" fill="#15130E"/>
+                <circle cx="-30" cy="-5" r="8" fill="#E44818"/>
+                <rect x="0" y="-10" width="40" height="10" rx="2" fill="#3C3831"/>
+                <rect x="-20" y="30" width="40" height="14" rx="3" fill="#2D3A44"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$32<sub>/day</sub></div>
+            <div class="listing__distance">0.9 mi</div>
+            <div class="listing__badge">⚡ In-demand</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Specialty</div>
+            <div class="listing__title">Honda EU2200i Inverter Generator</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">TB</div>Tyler B.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.9</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 14 · Tiller -->
+        <a href="listing.html?id=tiller" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #B5AB92 0%, #8A8172 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-30" y="-30" width="70" height="30" rx="4" fill="#E44818"/>
+                <rect x="-60" y="-40" width="30" height="40" rx="3" fill="#15130E"/>
+                <rect x="40" y="-5" width="50" height="8" rx="2" fill="#15130E"/>
+                <circle cx="0" cy="20" r="20" fill="#15130E"/>
+                <path d="M-20 20 L20 20 M0 0 L0 40 M-14 6 L14 34 M-14 34 L14 6" stroke="#E5DFCF" stroke-width="2.5"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$42<sub>/day</sub></div>
+            <div class="listing__distance">3.5 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Lawn &amp; yard</div>
+            <div class="listing__title">Troy-Bilt Rear-Tine Garden Tiller</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">GH</div>Greta H.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.6</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 15 · Engine Hoist -->
+        <a href="listing.html?id=hoist" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #2D3A44 0%, #5C574B 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-70" y="40" width="140" height="8" fill="#E44818"/>
+                <circle cx="-55" cy="52" r="7" fill="#15130E"/><circle cx="55" cy="52" r="7" fill="#15130E"/>
+                <rect x="-8" y="-55" width="8" height="100" fill="#15130E"/>
+                <rect x="-8" y="-55" width="80" height="8" fill="#15130E"/>
+                <line x1="60" y1="-48" x2="60" y2="-10" stroke="#E5DFCF" stroke-width="2"/>
+                <rect x="50" y="-15" width="20" height="10" fill="#E44818"/>
+                <path d="M0 -20 L-40 20 L0 35 Z" fill="#E5DFCF" opacity=".25"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$38<sub>/day</sub></div>
+            <div class="listing__distance">2.8 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Automotive</div>
+            <div class="listing__title">2-Ton Folding Engine Hoist</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">RS</div>Ramón S.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.8</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 16 · Shop Press -->
+        <a href="listing.html?id=press" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #EFE9DC 0%, #C9C0A8 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-50" y="-70" width="100" height="8" fill="#15130E"/>
+                <rect x="-50" y="50" width="100" height="8" fill="#15130E"/>
+                <rect x="-55" y="-70" width="8" height="128" fill="#15130E"/>
+                <rect x="47" y="-70" width="8" height="128" fill="#15130E"/>
+                <rect x="-30" y="-62" width="60" height="36" rx="3" fill="#E44818"/>
+                <rect x="-8" y="-26" width="16" height="50" fill="#15130E"/>
+                <rect x="-22" y="24" width="44" height="10" rx="2" fill="#3C3831"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$40<sub>/day</sub></div>
+            <div class="listing__distance">4.5 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Automotive</div>
+            <div class="listing__title">20-Ton Hydraulic Shop Press</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">BN</div>Brett N.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.7</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 17 · Track Saw -->
+        <a href="listing.html?id=track-saw" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #FBF7EA 0%, #D9D1BD 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-100" y="14" width="200" height="10" rx="2" fill="#15130E"/>
+                <g transform="translate(-20 -10) rotate(-5)">
+                  <rect x="-40" y="-20" width="80" height="38" rx="5" fill="#2D3A44"/>
+                  <circle cx="10" cy="14" r="20" fill="#E5DFCF"/>
+                  <circle cx="10" cy="14" r="18" fill="none" stroke="#15130E" stroke-width="1" stroke-dasharray="3 2"/>
+                  <rect x="-42" y="-14" width="30" height="22" rx="3" fill="#E44818"/>
+                </g>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$28<sub>/day</sub></div>
+            <div class="listing__distance">1.7 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Power tools</div>
+            <div class="listing__title">Makita Track Saw + 2 rails (55" + 118")</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">YT</div>Yuki T.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>5.0</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 18 · Nailer -->
+        <a href="listing.html?id=nailer" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #FFE4D7 0%, #D9D1BD 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100) rotate(-5)">
+                <rect x="-60" y="-28" width="40" height="56" rx="5" fill="#E44818"/>
+                <rect x="-20" y="-10" width="70" height="22" rx="3" fill="#15130E"/>
+                <rect x="45" y="-6" width="40" height="14" rx="2" fill="#3C3831"/>
+                <rect x="80" y="-3" width="10" height="8" fill="#EFE9DC"/>
+                <rect x="-56" y="28" width="28" height="24" rx="3" fill="#15130E"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$14<sub>/day</sub></div>
+            <div class="listing__distance">0.5 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Power tools</div>
+            <div class="listing__title">Ryobi Airstrike 18ga Brad Nailer</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">ML</div>Mark L.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.8</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 19 · Miter Saw -->
+        <a href="listing.html?id=miter-saw" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #C9C0A8 0%, #8A8172 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-80" y="25" width="160" height="16" rx="2" fill="#15130E"/>
+                <rect x="-15" y="20" width="30" height="8" fill="#2D3A44"/>
+                <g transform="rotate(-20)">
+                  <rect x="-40" y="-50" width="80" height="34" rx="4" fill="#E44818"/>
+                  <circle cx="0" cy="14" r="36" fill="none" stroke="#15130E" stroke-width="2"/>
+                  <circle cx="0" cy="14" r="30" fill="#3C3831"/>
+                  <circle cx="0" cy="14" r="4" fill="#E5DFCF"/>
+                </g>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$25<sub>/day</sub></div>
+            <div class="listing__distance">2.2 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Power tools</div>
+            <div class="listing__title">Bosch 12" Sliding Compound Miter Saw</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">AW</div>Ada W.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.9</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 20 · Cement Mixer -->
+        <a href="listing.html?id=mixer" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #E44818 0%, #B83712 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-70" y="20" width="140" height="8" fill="#15130E"/>
+                <circle cx="-55" cy="34" r="10" fill="#15130E"/><circle cx="55" cy="34" r="10" fill="#15130E"/>
+                <g transform="rotate(-15)">
+                  <ellipse cx="0" cy="-10" rx="40" ry="32" fill="#15130E"/>
+                  <ellipse cx="0" cy="-22" rx="20" ry="8" fill="#2D3A44"/>
+                </g>
+                <rect x="-8" y="20" width="16" height="-45" fill="#15130E"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$38<sub>/day</sub></div>
+            <div class="listing__distance">3.1 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Concrete</div>
+            <div class="listing__title">Electric Cement Mixer · 3.5 cu ft</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">VG</div>Vince G.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.6</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 21 · Angle Grinder -->
+        <a href="listing.html?id=grinder" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #FBF7EA 0%, #E5DFCF 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100) rotate(-15)">
+                <rect x="-70" y="-14" width="110" height="28" rx="5" fill="#E44818"/>
+                <rect x="-60" y="-10" width="50" height="20" rx="3" fill="#15130E"/>
+                <rect x="38" y="-4" width="12" height="8" fill="#3C3831"/>
+                <circle cx="60" cy="0" r="24" fill="#3C3831"/>
+                <circle cx="60" cy="0" r="22" fill="none" stroke="#E5DFCF" stroke-width="1.5" stroke-dasharray="3 2"/>
+                <circle cx="60" cy="0" r="5" fill="#E5DFCF"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$20<sub>/day</sub></div>
+            <div class="listing__distance">1.5 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Specialty</div>
+            <div class="listing__title">9" Angle Grinder + Diamond Wheels</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">HP</div>Hannah P.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.9</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 22 · Insulation Blower -->
+        <a href="listing.html?id=insulation" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #D9D1BD 0%, #B5AB92 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-60" y="-20" width="80" height="60" rx="6" fill="#15130E"/>
+                <rect x="-52" y="-12" width="40" height="32" rx="2" fill="#E44818"/>
+                <rect x="20" y="-10" width="50" height="20" rx="3" fill="#3C3831"/>
+                <circle cx="75" cy="0" r="16" fill="#3C3831"/>
+                <circle cx="75" cy="0" r="10" fill="#E5DFCF" opacity=".6"/>
+                <path d="M60 -12 L90 -22 M60 12 L90 22" stroke="#EFE9DC" stroke-width="2" opacity=".6"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$75<sub>/day</sub></div>
+            <div class="listing__distance">5.0 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Specialty</div>
+            <div class="listing__title">Attic Insulation Blower Machine</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">OD</div>Owen D.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.8</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 23 · Water Pump -->
+        <a href="listing.html?id=water-pump" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #2D3A44 0%, #3C3831 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-30" y="-40" width="60" height="70" rx="8" fill="#E44818"/>
+                <circle cx="0" cy="-5" r="18" fill="#15130E"/>
+                <circle cx="0" cy="-5" r="10" fill="#3C3831"/>
+                <circle cx="0" cy="-5" r="3" fill="#EFE9DC"/>
+                <rect x="-8" y="30" width="16" height="20" fill="#15130E"/>
+                <path d="M30 -30 Q60 -30 70 -10" stroke="#EFE9DC" stroke-width="4" fill="none" opacity=".7"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$28<sub>/day</sub></div>
+            <div class="listing__distance">2.8 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Plumbing</div>
+            <div class="listing__title">1 HP Submersible Water Pump</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">RV</div>Raj V.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.7</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 24 · Paint Sprayer -->
+        <a href="listing.html?id=paint-sprayer" class="listing">
+          <div class="listing__image" style="background: linear-gradient(135deg, #FFE4D7 0%, #FFCBAF 100%);">
+            <svg class="tool-illo" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(150 100)">
+                <rect x="-40" y="-10" width="90" height="50" rx="6" fill="#15130E"/>
+                <rect x="-30" y="-2" width="30" height="22" rx="2" fill="#E44818"/>
+                <path d="M50 5 Q70 0 85 -10" stroke="#3C3831" stroke-width="5" fill="none"/>
+                <rect x="85" y="-14" width="24" height="8" rx="2" fill="#2D3A44"/>
+                <path d="M109 -10 L125 -14 M109 -6 L125 -6 M109 -2 L125 2" stroke="#2D3A44" stroke-width="1.5"/>
+                <rect x="-20" y="40" width="40" height="20" rx="3" fill="#EFE9DC"/>
+              </g>
+            </svg>
+            <div class="listing__price-tag">$45<sub>/day</sub></div>
+            <div class="listing__distance">1.3 mi</div>
+          </div>
+          <div class="listing__body">
+            <div class="listing__cat">Specialty</div>
+            <div class="listing__title">Graco Airless Paint Sprayer</div>
+            <div class="listing__meta">
+              <div class="listing__owner"><div class="owner-avatar">NL</div>Naomi L.</div>
+              <span class="listing__rating"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.8</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="load-more-row">
+        <button class="btn btn--ghost btn--big">Load 24 more · <span style="color: var(--muted); font-family: var(--f-mono); font-size: 13px; font-weight: 400;">1,223 remaining</span></button>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <span class="logo">Rigg<span class="logo__dot"></span></span>
+        <p class="footer__tag">The local marketplace for tool rental. Built in Arkansas, on the idea that the tool you need is usually much closer than you think.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Marketplace</h5>
+        <ul>
+          <li><a href="browse.html">Browse tools</a></li>
+          <li><a href="browse.html">Categories</a></li>
+          <li><a href="browse.html?sort=top-rated">Top-rated owners</a></li>
+          <li><a href="#">Gift cards</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Owners</h5>
+        <ul>
+          <li><a href="index.html#earn">List a tool</a></li>
+          <li><a href="#">Pricing calculator</a></li>
+          <li><a href="#">Owner handbook</a></li>
+          <li><a href="#">Damage protection</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Trust &amp; safety</a></li>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© 2026 Rigg, Inc. · Little Rock, AR</div>
+      <div style="display: flex; gap: 22px;">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Community guidelines</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wordmark" aria-hidden="true">RIGG<span class="accent">·</span>RIGG<span class="accent">·</span>RIGG</div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
